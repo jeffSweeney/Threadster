@@ -11,6 +11,7 @@
 		E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCE2AF6DFA500203109 /* ContentView.swift */; };
 		E0CCDCD12AF6DFA600203109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCDCD02AF6DFA600203109 /* Assets.xcassets */; };
 		E0CCDCD42AF6DFA600203109 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCDCD32AF6DFA600203109 /* Preview Assets.xcassets */; };
+		E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCEB2AF6E2C700203109 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E0CCDCCE2AF6DFA500203109 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0CCDCD02AF6DFA600203109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0CCDCD32AF6DFA600203109 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0CCDCEB2AF6E2C700203109 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		E0CCDCE02AF6E11000203109 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E0CCDCEA2AF6E2BB00203109 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				E0CCDCCE2AF6DFA500203109 /* ContentView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		E0CCDCEA2AF6E2BB00203109 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCDCEB2AF6E2C700203109 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */,
 				E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */,
 				E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */,
 			);

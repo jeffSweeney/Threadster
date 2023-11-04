@@ -14,6 +14,7 @@
 		E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCEB2AF6E2C700203109 /* LoginView.swift */; };
 		E0CCDCEE2AF6E3DD00203109 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCED2AF6E3DD00203109 /* RegistrationView.swift */; };
 		E0CCDCF12AF6E5A000203109 /* ThreadsterTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCF02AF6E5A000203109 /* ThreadsterTextFieldModifier.swift */; };
+		E0CCDCF32AF6E8BE00203109 /* ThreadsterButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCF22AF6E8BE00203109 /* ThreadsterButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E0CCDCEB2AF6E2C700203109 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E0CCDCED2AF6E3DD00203109 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		E0CCDCF02AF6E5A000203109 /* ThreadsterTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsterTextFieldModifier.swift; sourceTree = "<group>"; };
+		E0CCDCF22AF6E8BE00203109 /* ThreadsterButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsterButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCDCF02AF6E5A000203109 /* ThreadsterTextFieldModifier.swift */,
+				E0CCDCF22AF6E8BE00203109 /* ThreadsterButtonModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0CCDCF32AF6E8BE00203109 /* ThreadsterButtonModifier.swift in Sources */,
 				E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */,
 				E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */,
 				E0CCDCF12AF6E5A000203109 /* ThreadsterTextFieldModifier.swift in Sources */,

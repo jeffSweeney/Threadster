@@ -43,12 +43,7 @@ struct RegistrationView: View {
                 print("Tapped SIGN UP")
             } label: {
                 Text("Sign Up")
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(width: 352, height: 44)
-                    .background(.black)
-                    .cornerRadius(8)
+                    .modifier(ThreadsterButtonModifier())
             }
             .padding(.vertical)
             

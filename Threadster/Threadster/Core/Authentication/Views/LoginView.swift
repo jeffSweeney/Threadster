@@ -47,12 +47,7 @@ struct LoginView: View {
                     print("Tapped LOGIN")
                 } label: {
                     Text("Login")
-                        .font(.headline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 352, height: 44)
-                        .background(.black)
-                        .cornerRadius(8)
+                        .modifier(ThreadsterButtonModifier())
                 }
 
                 Spacer()

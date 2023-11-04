@@ -51,8 +51,12 @@
 		E0CCDCCB2AF6DFA500203109 /* Threadster */ = {
 			isa = PBXGroup;
 			children = (
-				E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */,
-				E0CCDCCE2AF6DFA500203109 /* ContentView.swift */,
+				E0CCDCDF2AF6E06200203109 /* App */,
+				E0CCDCDE2AF6E05E00203109 /* Core */,
+				E0CCDCDD2AF6E05B00203109 /* Extensions */,
+				E0CCDCDC2AF6E05800203109 /* Model */,
+				E0CCDCDB2AF6E05400203109 /* Services */,
+				E0CCDCDA2AF6E04C00203109 /* Utils */,
 				E0CCDCD02AF6DFA600203109 /* Assets.xcassets */,
 				E0CCDCD22AF6DFA600203109 /* Preview Content */,
 			);
@@ -65,6 +69,66 @@
 				E0CCDCD32AF6DFA600203109 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E0CCDCDA2AF6E04C00203109 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E0CCDCDB2AF6E05400203109 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E0CCDCDC2AF6E05800203109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0CCDCDD2AF6E05B00203109 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0CCDCDE2AF6E05E00203109 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCDCE02AF6E11000203109 /* Authentication */,
+				E0CCDCE12AF6E12100203109 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E0CCDCDF2AF6E06200203109 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E0CCDCE02AF6E11000203109 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E0CCDCE12AF6E12100203109 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCDCCE2AF6DFA500203109 /* ContentView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

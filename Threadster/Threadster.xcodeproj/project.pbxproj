@@ -25,6 +25,7 @@
 		E0CCDD0F2AF9124C00203109 /* CircularImageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD0E2AF9124C00203109 /* CircularImageProfileView.swift */; };
 		E0CCDD112AF9130D00203109 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD102AF9130D00203109 /* UserCellView.swift */; };
 		E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD142AF91D7200203109 /* EditProfileView.swift */; };
+		E0CCDD182AF93F8D00203109 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E0CCDD0E2AF9124C00203109 /* CircularImageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageProfileView.swift; sourceTree = "<group>"; };
 		E0CCDD102AF9130D00203109 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 		E0CCDD142AF91D7200203109 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCDD122AF91D6000203109 /* EditProfile */,
+				E0CCDD162AF93F7100203109 /* Model */,
 				E0CCDD082AF8468700203109 /* View */,
 			);
 			path = Profile;
@@ -299,6 +302,14 @@
 				E0CCDD142AF91D7200203109 /* EditProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E0CCDD162AF93F7100203109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 				E0CCDD0F2AF9124C00203109 /* CircularImageProfileView.swift in Sources */,
 				E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */,
 				E0CCDD0C2AF85C9A00203109 /* ThreadCell.swift in Sources */,
+				E0CCDD182AF93F8D00203109 /* ProfileThreadFilter.swift in Sources */,
 				E0CCDCF12AF6E5A000203109 /* ThreadsterTextFieldModifier.swift in Sources */,
 				E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */,
 				E0CCDD022AF8458F00203109 /* UpdloadThreadView.swift in Sources */,

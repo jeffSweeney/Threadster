@@ -9,16 +9,28 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Hello, Feed!")
-                .font(.title)
-                .fontWeight(.bold)
-                .underline()
-            
-            HStack(spacing: 16) {
-                Image(systemName: "cloud.bolt.rain")
-                Text("PAGE UNDER CONSTRUCTION")
-                Image(systemName: "cloud.bolt.rain")
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                LazyVStack {
+                    ForEach(0 ... 10, id: \.self) { thread in
+                        ThreadCell()
+                    }
+                }
+            }
+            .refreshable {
+                print("DEBUG: Refresh Threadster - Swipe Down")
+            }
+            .navigationTitle("Threadster")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    print("DEBUG: Refresh Threadster - Bar Button")
+                } label: {
+                    Image(systemName: "arrow.counterclockwise")
+                        .foregroundColor(.black)
+                }
             }
         }
     }
@@ -26,6 +38,8 @@ struct FeedView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        NavigationStack {
+            FeedView()
+        }
     }
 }

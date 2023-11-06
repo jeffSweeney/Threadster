@@ -21,6 +21,7 @@
 		E0CCDD022AF8458F00203109 /* UpdloadThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD012AF8458F00203109 /* UpdloadThreadView.swift */; };
 		E0CCDD062AF8465400203109 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD052AF8465400203109 /* ActivityView.swift */; };
 		E0CCDD0A2AF8468F00203109 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD092AF8468F00203109 /* ProfileView.swift */; };
+		E0CCDD0C2AF85C9A00203109 /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD0B2AF85C9A00203109 /* ThreadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E0CCDD012AF8458F00203109 /* UpdloadThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdloadThreadView.swift; sourceTree = "<group>"; };
 		E0CCDD052AF8465400203109 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E0CCDD092AF8468F00203109 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E0CCDD0B2AF85C9A00203109 /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCDCF92AF843DC00203109 /* FeedView.swift */,
+				E0CCDD0B2AF85C9A00203109 /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				E0CCDCF62AF841C900203109 /* ThreadsterTabView.swift in Sources */,
 				E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */,
 				E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */,
+				E0CCDD0C2AF85C9A00203109 /* ThreadCell.swift in Sources */,
 				E0CCDCF12AF6E5A000203109 /* ThreadsterTextFieldModifier.swift in Sources */,
 				E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */,
 				E0CCDD022AF8458F00203109 /* UpdloadThreadView.swift in Sources */,

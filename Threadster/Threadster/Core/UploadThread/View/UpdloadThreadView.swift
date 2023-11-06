@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UpdloadThreadView: View {
     @State private var caption = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationStack {
@@ -46,7 +47,7 @@ struct UpdloadThreadView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        print("TAPPED Cancel")
+                        dismiss()
                     }
                     .font(.subheadline)
                     .foregroundColor(.black)
@@ -54,7 +55,9 @@ struct UpdloadThreadView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Post") {
+                        // TODO: POST
                         print("TAPPED Done")
+                        dismiss()
                     }
                     .opacity(caption.isEmpty ? 0.25 : 1.0)
                     .disabled(caption.isEmpty)

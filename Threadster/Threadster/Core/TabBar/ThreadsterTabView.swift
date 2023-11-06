@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ThreadsterTabView: View {
     @State private var selectedTab = 0
+    @State private var showUploadThread = false
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -27,7 +28,7 @@ struct ThreadsterTabView: View {
                 .onAppear { selectedTab = 1 }
                 .tag(1)
             
-            UpdloadThreadView()
+            Text("") // Dummy view - UploadThreadView was here but now we're presenting it as a sheet below
                 .tabItem {
                     Image(systemName: "plus")
                 }
@@ -50,6 +51,12 @@ struct ThreadsterTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
+        .onChange(of: selectedTab, perform: { _ in
+            showUploadThread = selectedTab == 2
+        })
+        .sheet(isPresented: $showUploadThread, onDismiss: { selectedTab = 0 }, content: {
+            UpdloadThreadView()
+        })
         .tint(.black)
     }
 }

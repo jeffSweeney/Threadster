@@ -12,6 +12,8 @@
 		E06CFB442AFC44AF00938E4F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB432AFC44AF00938E4F /* FirebaseFirestore */; };
 		E06CFB462AFC44AF00938E4F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB452AFC44AF00938E4F /* FirebaseFirestoreSwift */; };
 		E06CFB482AFC44AF00938E4F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB472AFC44AF00938E4F /* FirebaseStorage */; };
+		E06CFB4C2AFC518600938E4F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */; };
+		E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4D2AFC523E00938E4F /* AuthService.swift */; };
 		E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */; };
 		E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCE2AF6DFA500203109 /* ContentView.swift */; };
 		E0CCDCD12AF6DFA600203109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCDCD02AF6DFA600203109 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		E06CFB4D2AFC523E00938E4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E0CCDCC92AF6DFA500203109 /* Threadster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threadster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsterApp.swift; sourceTree = "<group>"; };
 		E0CCDCCE2AF6DFA500203109 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E06CFB492AFC517000938E4F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E06CFB4A2AFC517600938E4F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E06CFB4D2AFC523E00938E4F /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		E0CCDCC02AF6DFA500203109 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +188,8 @@
 		E0CCDCE02AF6E11000203109 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E06CFB4A2AFC517600938E4F /* Service */,
+				E06CFB492AFC517000938E4F /* ViewModels */,
 				E0CCDCEA2AF6E2BB00203109 /* Views */,
 			);
 			path = Authentication;
@@ -404,10 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CCDD062AF8465400203109 /* ActivityView.swift in Sources */,
+				E06CFB4C2AFC518600938E4F /* RegistrationViewModel.swift in Sources */,
 				E0CCDCFA2AF843DC00203109 /* FeedView.swift in Sources */,
 				E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */,
 				E0CCDCFE2AF8456E00203109 /* ExploreView.swift in Sources */,
 				E0CCDCF32AF6E8BE00203109 /* ThreadsterButtonModifier.swift in Sources */,
+				E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */,
 				E0CCDD0A2AF8468F00203109 /* ProfileView.swift in Sources */,
 				E0CCDCF62AF841C900203109 /* ThreadsterTabView.swift in Sources */,
 				E0CCDCEC2AF6E2C700203109 /* LoginView.swift in Sources */,

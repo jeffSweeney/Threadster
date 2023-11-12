@@ -12,6 +12,8 @@
 		E000DB592AFEDD9F005EE1A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB582AFEDD9F005EE1A4 /* User.swift */; };
 		E000DB5B2AFEE089005EE1A4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB5A2AFEE089005EE1A4 /* UserService.swift */; };
 		E000DB5E2AFEE196005EE1A4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */; };
+		E000DB7F2B01305B005EE1A4 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB7E2B01305B005EE1A4 /* ExploreViewModel.swift */; };
+		E000DB812B013282005EE1A4 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB802B013282005EE1A4 /* PreviewProvider.swift */; };
 		E06CFB3F2AFC441600938E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */; };
 		E06CFB422AFC44AF00938E4F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB412AFC44AF00938E4F /* FirebaseAuth */; };
 		E06CFB442AFC44AF00938E4F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB432AFC44AF00938E4F /* FirebaseFirestore */; };
@@ -46,6 +48,8 @@
 		E000DB582AFEDD9F005EE1A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E000DB5A2AFEE089005EE1A4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E000DB7E2B01305B005EE1A4 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		E000DB802B013282005EE1A4 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E06CFB4D2AFC523E00938E4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -106,6 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E000DB7D2B01304A005EE1A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E000DB7E2B01305B005EE1A4 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 		E0CCDCDD2AF6E05B00203109 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E000DB802B013282005EE1A4 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCDCFC2AF8456600203109 /* View */,
+				E000DB7D2B01304A005EE1A4 /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -485,9 +499,11 @@
 				E0CCDCF12AF6E5A000203109 /* ThreadsterTextFieldModifier.swift in Sources */,
 				E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */,
 				E0CCDD022AF8458F00203109 /* UpdloadThreadView.swift in Sources */,
+				E000DB7F2B01305B005EE1A4 /* ExploreViewModel.swift in Sources */,
 				E0CCDD112AF9130D00203109 /* UserCellView.swift in Sources */,
 				E0CCDCEE2AF6E3DD00203109 /* RegistrationView.swift in Sources */,
 				E000DB572AFED174005EE1A4 /* LoginViewModel.swift in Sources */,
+				E000DB812B013282005EE1A4 /* PreviewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

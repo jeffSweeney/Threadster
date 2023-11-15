@@ -11,7 +11,7 @@
 		E000DB572AFED174005EE1A4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB562AFED174005EE1A4 /* LoginViewModel.swift */; };
 		E000DB592AFEDD9F005EE1A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB582AFEDD9F005EE1A4 /* User.swift */; };
 		E000DB5B2AFEE089005EE1A4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB5A2AFEE089005EE1A4 /* UserService.swift */; };
-		E000DB5E2AFEE196005EE1A4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */; };
+		E000DB5E2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB5D2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift */; };
 		E000DB7F2B01305B005EE1A4 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB7E2B01305B005EE1A4 /* ExploreViewModel.swift */; };
 		E000DB812B013282005EE1A4 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E000DB802B013282005EE1A4 /* PreviewProvider.swift */; };
 		E06CFB3F2AFC441600938E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */; };
@@ -40,6 +40,7 @@
 		E0CCDD112AF9130D00203109 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD102AF9130D00203109 /* UserCellView.swift */; };
 		E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD142AF91D7200203109 /* EditProfileView.swift */; };
 		E0CCDD182AF93F8D00203109 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */; };
+		E0EFEFAA2B04FC720049B491 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EFEFA92B04FC720049B491 /* CurrentUserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,7 @@
 		E000DB562AFED174005EE1A4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E000DB582AFEDD9F005EE1A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E000DB5A2AFEE089005EE1A4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E000DB5D2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
 		E000DB7E2B01305B005EE1A4 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		E000DB802B013282005EE1A4 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		E0CCDD102AF9130D00203109 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 		E0CCDD142AF91D7200203109 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		E0EFEFA92B04FC720049B491 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,6 @@
 		E000DB5C2AFEE185005EE1A4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E000DB5D2AFEE196005EE1A4 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -349,6 +350,7 @@
 		E0CCDD072AF8468200203109 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E0EFEFA72B04FC040049B491 /* CurrentUserProfile */,
 				E0CCDD122AF91D6000203109 /* EditProfile */,
 				E0CCDD162AF93F7100203109 /* Model */,
 				E0CCDD082AF8468700203109 /* View */,
@@ -396,6 +398,31 @@
 				E0CCDD172AF93F8D00203109 /* ProfileThreadFilter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E0EFEFA72B04FC040049B491 /* CurrentUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E0EFEFA82B04FC460049B491 /* View */,
+				E0EFEFAB2B04FCCC0049B491 /* ViewModel */,
+			);
+			path = CurrentUserProfile;
+			sourceTree = "<group>";
+		};
+		E0EFEFA82B04FC460049B491 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0EFEFA92B04FC720049B491 /* CurrentUserProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0EFEFAB2B04FCCC0049B491 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E000DB5D2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,8 +511,9 @@
 				E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */,
 				E000DB552AFECB48005EE1A4 /* ContentViewModel.swift in Sources */,
 				E0CCDCFE2AF8456E00203109 /* ExploreView.swift in Sources */,
-				E000DB5E2AFEE196005EE1A4 /* ProfileViewModel.swift in Sources */,
+				E000DB5E2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift in Sources */,
 				E0CCDCF32AF6E8BE00203109 /* ThreadsterButtonModifier.swift in Sources */,
+				E0EFEFAA2B04FC720049B491 /* CurrentUserProfileView.swift in Sources */,
 				E000DB5B2AFEE089005EE1A4 /* UserService.swift in Sources */,
 				E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */,
 				E0CCDD0A2AF8468F00203109 /* ProfileView.swift in Sources */,

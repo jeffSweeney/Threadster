@@ -5,12 +5,16 @@
 //  Created by Jeffrey Sweeney on 11/6/23.
 //
 
+import PhotosUI
 import SwiftUI
 
 struct EditProfileView: View {
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
+    
+    @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: CurrentUserProfileViewModel
     
     var body: some View {
         // Not actually navigating - but the free nav bar functionality is nice to have
@@ -30,7 +34,17 @@ struct EditProfileView: View {
                         
                         Spacer()
                         
-                        CircularImageProfileView(assetName: "CoolSky")
+                        PhotosPicker(selection: $viewModel.selectedItem) {
+                            if let image = viewModel.profileImage {
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                            } else {
+                                CircularImageProfileView(assetName: "CoolSky")
+                            }
+                        }
                     }
                     
                     Divider()
@@ -72,7 +86,7 @@ struct EditProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        print("TAPPED Cancel")
+                        dismiss()
                     }
                     .font(.subheadline)
                     .foregroundColor(.black)
@@ -80,7 +94,8 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        print("TAPPED Done")
+                        // TODO: NEED TO SAVE DATA
+                        dismiss()
                     }
                     .font(.subheadline)
                     .fontWeight(.semibold)

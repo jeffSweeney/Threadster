@@ -9,6 +9,8 @@ import PhotosUI
 import SwiftUI
 
 struct EditProfileView: View {
+    let user: User
+    
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
@@ -29,7 +31,7 @@ struct EditProfileView: View {
                             Text("Name")
                                 .fontWeight(.semibold)
                             
-                            Text("Jeff Sweeney")
+                            Text(user.fullname)
                         }
                         
                         Spacer()
@@ -42,7 +44,7 @@ struct EditProfileView: View {
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                             } else {
-                                CircularImageProfileView(assetName: "CoolSky")
+                                CircularImageProfileView(user: user, size: .small)
                             }
                         }
                     }
@@ -108,6 +110,6 @@ struct EditProfileView: View {
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileView()
+        EditProfileView(user: dev.user)
     }
 }

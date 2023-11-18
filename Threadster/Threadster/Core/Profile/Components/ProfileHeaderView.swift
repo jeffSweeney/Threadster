@@ -40,7 +40,7 @@ struct ProfileHeaderView: View {
             
             Spacer()
             
-            CircularImageProfileView(assetName: "CampFire")
+            CircularImageProfileView(user: user, size: .medium)
         }
     }
 }

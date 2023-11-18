@@ -12,7 +12,7 @@ struct UserCellView: View {
     
     var body: some View {
         HStack {
-            CircularImageProfileView(assetName: "Balloons")
+            CircularImageProfileView(user: user, size: .small)
             
             VStack(alignment: .leading, spacing: 2) {
                 Text(user.username)

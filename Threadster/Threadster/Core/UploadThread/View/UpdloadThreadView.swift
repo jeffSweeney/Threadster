@@ -15,7 +15,7 @@ struct UpdloadThreadView: View {
         NavigationStack {
             VStack {
                 HStack(alignment: .top) {
-                    CircularImageProfileView(assetName: "CoolSky")
+                    CircularImageProfileView(user: nil, size: .small)
                     
                     VStack(alignment: .leading, spacing: 4) {
                         Text("jeff_sweeney_1")

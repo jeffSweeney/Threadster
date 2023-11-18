@@ -42,7 +42,7 @@ class UserService: ObservableObject {
             "profileImageURL": imageURL
         ])
         
-        self.currentUser?.profileImageUrl = imageURL
+        self.currentUser?.profileImageURL = imageURL
     }
 }
 

@@ -12,9 +12,9 @@ struct EditProfileView: View {
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
+    @StateObject var viewModel = EditProfileViewModel()
     
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var viewModel: CurrentUserProfileViewModel
     
     var body: some View {
         // Not actually navigating - but the free nav bar functionality is nice to have

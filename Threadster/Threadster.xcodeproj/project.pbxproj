@@ -23,6 +23,7 @@
 		E06CFB482AFC44AF00938E4F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E06CFB472AFC44AF00938E4F /* FirebaseStorage */; };
 		E06CFB4C2AFC518600938E4F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */; };
 		E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4D2AFC523E00938E4F /* AuthService.swift */; };
+		E0CBAAC32B090CC100F1CE84 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */; };
 		E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */; };
 		E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCE2AF6DFA500203109 /* ContentView.swift */; };
 		E0CCDCD12AF6DFA600203109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCDCD02AF6DFA600203109 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		E06CFB3E2AFC441600938E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E06CFB4D2AFC523E00938E4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E0CCDCC92AF6DFA500203109 /* Threadster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threadster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsterApp.swift; sourceTree = "<group>"; };
 		E0CCDCCE2AF6DFA500203109 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 				E06CFB4D2AFC523E00938E4F /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		E0CBAAC12B090C9B00F1CE84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E0CCDCC02AF6DFA500203109 = {
@@ -386,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CCDD132AF91D6A00203109 /* View */,
+				E0CBAAC12B090C9B00F1CE84 /* ViewModel */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -523,6 +534,7 @@
 				E000DB5B2AFEE089005EE1A4 /* UserService.swift in Sources */,
 				E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */,
 				E030D05C2B0808EE0080442F /* ProfileHeaderView.swift in Sources */,
+				E0CBAAC32B090CC100F1CE84 /* EditProfileViewModel.swift in Sources */,
 				E0CCDD0A2AF8468F00203109 /* ProfileView.swift in Sources */,
 				E0CCDCF62AF841C900203109 /* ThreadsterTabView.swift in Sources */,
 				E000DB592AFEDD9F005EE1A4 /* User.swift in Sources */,

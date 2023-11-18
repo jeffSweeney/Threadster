@@ -94,7 +94,7 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        // TODO: NEED TO SAVE DATA
+                        Task { try await viewModel.updateUserData() }
                         dismiss()
                     }
                     .font(.subheadline)

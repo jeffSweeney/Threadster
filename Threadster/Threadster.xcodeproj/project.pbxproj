@@ -24,6 +24,7 @@
 		E06CFB4C2AFC518600938E4F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */; };
 		E06CFB4E2AFC523E00938E4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CFB4D2AFC523E00938E4F /* AuthService.swift */; };
 		E0CBAAC32B090CC100F1CE84 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */; };
+		E0CBAAC52B09113500F1CE84 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBAAC42B09113500F1CE84 /* ImageUploader.swift */; };
 		E0CCDCCD2AF6DFA500203109 /* ThreadsterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */; };
 		E0CCDCCF2AF6DFA500203109 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCDCCE2AF6DFA500203109 /* ContentView.swift */; };
 		E0CCDCD12AF6DFA600203109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CCDCD02AF6DFA600203109 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		E06CFB4B2AFC518600938E4F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		E06CFB4D2AFC523E00938E4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		E0CBAAC42B09113500F1CE84 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		E0CCDCC92AF6DFA500203109 /* Threadster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threadster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CCDCCC2AF6DFA500203109 /* ThreadsterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsterApp.swift; sourceTree = "<group>"; };
 		E0CCDCCE2AF6DFA500203109 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				E000DB5A2AFEE089005EE1A4 /* UserService.swift */,
+				E0CBAAC42B09113500F1CE84 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */,
 				E000DB552AFECB48005EE1A4 /* ContentViewModel.swift in Sources */,
 				E0CCDCFE2AF8456E00203109 /* ExploreView.swift in Sources */,
+				E0CBAAC52B09113500F1CE84 /* ImageUploader.swift in Sources */,
 				E000DB5E2AFEE196005EE1A4 /* CurrentUserProfileViewModel.swift in Sources */,
 				E0CCDCF32AF6E8BE00203109 /* ThreadsterButtonModifier.swift in Sources */,
 				E0EFEFAA2B04FC720049B491 /* CurrentUserProfileView.swift in Sources */,

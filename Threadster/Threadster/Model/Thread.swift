@@ -10,7 +10,7 @@ import FirebaseFirestoreSwift
 
 struct Thread: Codable, Identifiable {
     @DocumentID var threadId: String?
-    let ownderUid: String
+    let ownerId: String
     let caption: String
     let timestamp: Timestamp
     var likes: Int

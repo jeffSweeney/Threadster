@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct UpdloadThreadView: View {
-    @State private var caption = ""
+    @StateObject var viewModel = UploadThreadViewModel()
     @Environment(\.dismiss) var dismiss
+    
+    private var user: User? {
+        return UserService.shared.currentUser
+    }
     
     var body: some View {
         NavigationStack {
             VStack {
                 HStack(alignment: .top) {
-                    CircularImageProfileView(user: nil, size: .small)
+                    CircularImageProfileView(user: user, size: .small)
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("jeff_sweeney_1")
+                        Text(user?.username ?? "")
                             .fontWeight(.semibold)
                         
-                        TextField("Start a thread...", text: $caption, axis: .vertical)
+                        TextField("Start a thread...", text: $viewModel.caption, axis: .vertical)
                     }
                     .font(.footnote)
                     
                     Spacer()
                     
-                    if !caption.isEmpty {
+                    if !viewModel.caption.isEmpty {
                         Button {
-                            caption = ""
+                            viewModel.caption = ""
                         } label: {
                             Image(systemName: "xmark")
                                 .resizable()
@@ -55,12 +59,11 @@ struct UpdloadThreadView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Post") {
-                        // TODO: POST
-                        print("TAPPED Done")
+                        Task { try await viewModel.uploadThread() }
                         dismiss()
                     }
-                    .opacity(caption.isEmpty ? 0.25 : 1.0)
-                    .disabled(caption.isEmpty)
+                    .opacity(viewModel.caption.isEmpty ? 0.25 : 1.0)
+                    .disabled(viewModel.caption.isEmpty)
                     .font(.subheadline)
                     .foregroundColor(.black)
                 }

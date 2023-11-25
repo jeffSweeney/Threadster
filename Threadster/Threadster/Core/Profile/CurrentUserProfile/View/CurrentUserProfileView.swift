@@ -38,8 +38,10 @@ struct CurrentUserProfileView: View {
                     }
                     
                     // MARK: - User Content List View
-                    UserContentListView()
-                        .padding(.vertical)
+                    if let user = currentUser {
+                        UserContentListView(user: user)
+                            .padding(.vertical)
+                    }
                 }
             }
             .sheet(isPresented: $showEditProfile, content: {

@@ -20,7 +20,7 @@ struct FeedView: View {
                 }
             }
             .refreshable {
-                print("DEBUG: Refresh Threadster - Swipe Down")
+                Task { try await viewModel.fetchThreads() }
             }
             .navigationTitle("Threadster")
             .navigationBarTitleDisplayMode(.inline)

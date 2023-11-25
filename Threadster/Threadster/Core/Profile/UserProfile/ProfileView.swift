@@ -29,7 +29,7 @@ struct ProfileView: View {
                 }
                 
                 // MARK: - User Content List View
-                UserContentListView()
+                UserContentListView(user: user)
                     .padding(.vertical)
             }
         }

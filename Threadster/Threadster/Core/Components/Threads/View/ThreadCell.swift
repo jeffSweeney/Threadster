@@ -40,33 +40,9 @@ struct ThreadCell: View {
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     
-                    HStack(spacing: 16) {
-                        Button {
-                            print("tapped heart")
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-                        
-                        Button {
-                            print("tapped bubble.right")
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-                        
-                        Button {
-                            print("tapped arrow.rectanglepath")
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-                        
-                        Button {
-                            print("tapped paperplane")
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-                    }
-                    .foregroundColor(.black)
-                    .padding(.vertical, 8)
+                    ContentActionButtonsView(thread: self.thread)
+                        .foregroundColor(.black)
+                        .padding(.vertical, 8)
                 }
             }
             

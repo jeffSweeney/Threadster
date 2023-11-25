@@ -20,4 +20,7 @@ struct Thread: Codable, Identifiable {
     }
     
     var user: User?
+    
+    // Related to current client side user - not uploading to DB
+    var didLike: Bool? = false
 }

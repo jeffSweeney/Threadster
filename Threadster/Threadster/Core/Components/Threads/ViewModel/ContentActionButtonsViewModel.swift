@@ -14,8 +14,11 @@ class ContentActionButtonsViewModel: ObservableObject {
         self.thread = thread
     }
     
-    func likeThread() {
+    @MainActor
+    func likeThread() async throws {
+        try await ThreadService.likeThread(thread)
         self.thread.didLike = true
+        self.thread.likes += 1
     }
     
     func unlikeThread() {

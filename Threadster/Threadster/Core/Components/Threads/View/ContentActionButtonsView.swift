@@ -21,7 +21,7 @@ struct ContentActionButtonsView: View {
     var body: some View {
         HStack(spacing: 16) {
             Button {
-                didLike ? viewModel.unlikeThread() : viewModel.likeThread()
+                Task { try await didLike ? viewModel.unlikeThread() : viewModel.likeThread() }
             } label: {
                 Image(systemName: self.didLike ? "heart.fill" : "heart")
                     .foregroundStyle(self.didLike ? Color(.red) : Color(.black))

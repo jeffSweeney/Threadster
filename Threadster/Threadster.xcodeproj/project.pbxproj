@@ -28,6 +28,8 @@
 		E097B69D2B12A05B00CB4BA3 /* ContentActionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097B69C2B12A05B00CB4BA3 /* ContentActionButtonsView.swift */; };
 		E097B6A12B12A11200CB4BA3 /* ContentActionButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097B6A02B12A11200CB4BA3 /* ContentActionButtonsViewModel.swift */; };
 		E0A4F37C2B14D73E004ECA20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4F37B2B14D73E004ECA20 /* Constants.swift */; };
+		E0A4F3812B158733004ECA20 /* ThreadReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4F3802B158733004ECA20 /* ThreadReplyView.swift */; };
+		E0A4F3832B158D34004ECA20 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4F3822B158D34004ECA20 /* String.swift */; };
 		E0CBAAC32B090CC100F1CE84 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */; };
 		E0CBAAC52B09113500F1CE84 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBAAC42B09113500F1CE84 /* ImageUploader.swift */; };
 		E0CBAAC82B09262B00F1CE84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E0CBAAC72B09262B00F1CE84 /* Kingfisher */; };
@@ -75,6 +77,8 @@
 		E097B69C2B12A05B00CB4BA3 /* ContentActionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonsView.swift; sourceTree = "<group>"; };
 		E097B6A02B12A11200CB4BA3 /* ContentActionButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonsViewModel.swift; sourceTree = "<group>"; };
 		E0A4F37B2B14D73E004ECA20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E0A4F3802B158733004ECA20 /* ThreadReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyView.swift; sourceTree = "<group>"; };
+		E0A4F3822B158D34004ECA20 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E0CBAAC22B090CC100F1CE84 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E0CBAAC42B09113500F1CE84 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		E0CCDCC92AF6DFA500203109 /* Threadster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threadster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +226,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E0A4F37D2B1586E0004ECA20 /* ThreadReplies */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4F37E2B158717004ECA20 /* View */,
+				E0A4F37F2B15871B004ECA20 /* ViewModel */,
+			);
+			path = ThreadReplies;
+			sourceTree = "<group>";
+		};
+		E0A4F37E2B158717004ECA20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4F3802B158733004ECA20 /* ThreadReplyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0A4F37F2B15871B004ECA20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E0CBAAC12B090C9B00F1CE84 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				E000DB802B013282005EE1A4 /* PreviewProvider.swift */,
+				E0A4F3822B158D34004ECA20 /* String.swift */,
 				E097B6972B129BA000CB4BA3 /* Timestamp.swift */,
 			);
 			path = Extensions;
@@ -318,6 +347,7 @@
 				E0CCDD072AF8468200203109 /* Profile */,
 				E0CCDCE12AF6E12100203109 /* Root */,
 				E0CCDCF42AF8419A00203109 /* TabBar */,
+				E0A4F37D2B1586E0004ECA20 /* ThreadReplies */,
 				E0CCDCFF2AF8457B00203109 /* UploadThread */,
 			);
 			path = Core;
@@ -625,6 +655,7 @@
 				E06CFB4C2AFC518600938E4F /* RegistrationViewModel.swift in Sources */,
 				E0CCDCFA2AF843DC00203109 /* FeedView.swift in Sources */,
 				E0CCDD152AF91D7200203109 /* EditProfileView.swift in Sources */,
+				E0A4F3812B158733004ECA20 /* ThreadReplyView.swift in Sources */,
 				E000DB552AFECB48005EE1A4 /* ContentViewModel.swift in Sources */,
 				E0CCDCFE2AF8456E00203109 /* ExploreView.swift in Sources */,
 				E0CBAAC52B09113500F1CE84 /* ImageUploader.swift in Sources */,
@@ -637,6 +668,7 @@
 				E097B69D2B12A05B00CB4BA3 /* ContentActionButtonsView.swift in Sources */,
 				E0A4F37C2B14D73E004ECA20 /* Constants.swift in Sources */,
 				E030D05C2B0808EE0080442F /* ProfileHeaderView.swift in Sources */,
+				E0A4F3832B158D34004ECA20 /* String.swift in Sources */,
 				E0CBAAC32B090CC100F1CE84 /* EditProfileViewModel.swift in Sources */,
 				E0CCDD0A2AF8468F00203109 /* ProfileView.swift in Sources */,
 				E0CCDCF62AF841C900203109 /* ThreadsterTabView.swift in Sources */,
